@@ -11,13 +11,14 @@ html {
   --primary-text-color:#212121;
   --primary-bg-color:#FFFFFF;
   --accent-color: #2196F3;
-  --block-background-color:#2F303A;
+  --block-background-color: rgba(47, 48, 58, 0.4);
   --info-color-footer: rgba(255, 255, 255, 0.6);
   --item-contact:#757575;
   --part-of-logo: #000000;
   --secondary-button-color:#F5F4FA;
   --border-color-head:#ECECEC;
   --border-color-portfolio: #EEEEEE;
+  --footer-color: #2F303A;
 }
 
 body {
@@ -152,6 +153,19 @@ margin-right: 50px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+
+  background-image: linear-gradient(to right,
+        var(--block-background-color),
+        var(--block-background-color)),
+      url(../images/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 .section {
  padding-top: 94px;
@@ -242,7 +256,7 @@ margin-right: 50px;
 }
 /* footer */
 .footer {
-  background-color: var(--block-background-color);
+  background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
