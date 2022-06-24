@@ -122,6 +122,19 @@ margin-right: 50px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+
+/* logo letter phone */
+.icon-letter {
+ width: 16px;
+ height: 12px;
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+
 .contact .contact-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -132,22 +145,6 @@ margin-right: 50px;
 /* logo-contact */
 .contact-item {
   display: flex;
-}
-.contact-item::before {
-  content: '';
-    height: 18px;
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--primary-bg-color);
-    border-radius: 4px;
-}
-.icon-letter::before {
-background-image: url(../images/icon/letter.svg);
-}
-.icon-smartphone::before {
-background-image: url(../images/icon/smartphone.svg);
 }
 
 .info {
