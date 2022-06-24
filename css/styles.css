@@ -128,10 +128,13 @@ margin-right: 50px;
 .icon-letter {
  width: 16px;
  height: 12px;
+ margin-right: 10px;
+ fill:currentColor;
 }
 .icon-smartphone {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
 }
 
 
@@ -142,6 +145,9 @@ margin-right: 50px;
 .contact .info:focus {
   color: var(--accent-color);
 }
+.icon-letter .icon-smartphone:hover {
+  color: var(--accent-color);
+}
 /* logo-contact */
 .contact-item {
   display: flex;
@@ -150,6 +156,8 @@ margin-right: 50px;
 .info {
   text-decoration: none;
   color: var(--item-contact);
+  display: flex;
+  align-items: center;
 }
 /* Hero */
 
@@ -193,33 +201,23 @@ margin-right: 50px;
 .items-way {
   display: flex;
 }
-.li-way::before {
-  content: '';
+.container-tile {
   height: 120px;
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
   background-color: var(--secondary-button-color);
   border-radius: 4px;
   margin-bottom: 30px;
+  justify-content: center;
 }
+
+.container-tile svg {
+  width: 70px;
+}
+
 .items-way .li-way:not(:last-child) {
   margin-right: 30px;
 }
 /* icon */
-.icon-antena::before {
-background-image: url(../images/icon/antenna.svg);
-}
-.icon-clock::before {
-background-image: url(../images/icon/clock.svg);
-}
-.icon-diagram::before {
-background-image: url(../images/icon/diagram.svg);
-}
-.icon-cosmonavt::before {
-background-image: url(../images/icon/cosmonavt.svg)
-}
 
 .subtitle {
     font-weight: 700;
@@ -297,6 +295,15 @@ background-image: url(../images/icon/cosmonavt.svg)
   margin-top: 0;
   margin-bottom: 10px;
 }
+.social-team {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  margin-right: 10px;
+}
+.logo-social {
+  width: 20px;
+}
 /* Постоянные клиенты */
 .always-clines {
   font-weight: 700;
@@ -305,6 +312,20 @@ background-image: url(../images/icon/cosmonavt.svg)
     margin-top: 0;
     margin-bottom: 50px;
     text-align: center;
+}
+.clines-container {
+ border: 1px solid #AFB1B8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-tile svg {
+  width: 70px;
+}
+.clines {
+  display: flex;
+  justify-content: center;
 }
 /* footer */
 .footer {
@@ -438,10 +459,7 @@ margin-right: 0;
     padding: 20px;
     margin-top: -5px;
   }
-    /* .list-portfolio .li-portfolio:not(:last-child) {
-      margin-right: 30px;
-    } */
-    
+  
 /* основной color: #212121; */
 /*вторичный цвет  color: #757575 */
 /* белый color: #FFFFFF; */
