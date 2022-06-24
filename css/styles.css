@@ -298,6 +298,14 @@ background-image: url(../images/icon/cosmonavt.svg)
   margin-bottom: 10px;
 }
 /* Постоянные клиенты */
+.always-clines {
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
 /* footer */
 .footer {
   background-color: var(--footer-color);
