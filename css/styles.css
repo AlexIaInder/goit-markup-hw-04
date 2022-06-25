@@ -129,13 +129,27 @@ margin-right: 50px;
  width: 16px;
  height: 12px;
  margin-right: 10px;
- fill:currentColor;
+fill: currentColor;
 }
 .icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: currentColor;
+  
 }
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
 
 
 .contact .contact-item:not(:last-child) {
@@ -308,8 +322,18 @@ margin-right: 50px;
   margin-right: auto;
   margin-bottom: 30px;
 }
-/* .logo-social {
-} */
+.logo-social {
+  
+  fill:#FFFFFF;
+}
+.logo-social:hover,
+.logo-social:focus {
+      fill: var(--accent-color);
+      cursor: pointer;
+      
+    }
+    /* var(--primary-bg-color)
+    fill="#afb1b8" style="fill:var(--color3, #afb1b8)" */
 /* Постоянные клиенты */
 .always-clines {
   font-weight: 700;
@@ -335,30 +359,43 @@ margin-right: 50px;
 .clines  {
   width: 41px;
   height: 46px;
+  fill:#afb1b8 ;
 }
-.clines:nth-child(1) {
-
-}
-clines:nth-child(2) {
-
-}
-
-clines:nth-child(3) {
+.clines-container .clines:hover{
+fill: var(--accent-color);
+cursor: pointer;
 
 }
+/* fill="#afb1b8" style="fill:var(--color3, #afb1b8)" */
 
-.clines:nth-child(4) {
+.yaco {
+width: 41px;
+height: 46px;
+}
+.company-here {
+  width: 40px;
+  height: 52px;
+}
+
+.company {
+width: 43px;
+height: 41px;
+}
+
+.foster-peters {
 width: 84px;
 height: 40px;
 }
 
-clines:nth-child(5) {
-
+.brand {
+  width: 62px;
+  height: 45px;
 }
 
-clines:nth-child(6) {
-
-}
+.tag-line {
+  width: 93px;
+  height: 43px;
+  }
 .container-tile svg {
   width: 70px;
 }
@@ -425,11 +462,19 @@ margin-top: 20px;
 .icon-footer {
   display: flex;
   gap: 10px;
+  
 }
 
 .icon-footer svg {
   height: 44px;
+  fill: rgba(255, 255, 255, 0.1);
 }
+.icon-footer svg:hover,
+.icon-footer svg:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+/* fill="#fff" style="fill:var(--color4, #fff)" */
 
  
 
@@ -467,6 +512,8 @@ button {
 .secondary-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border: 1px solid var(--accent-color);
 }
 .button-all {
 min-width: 73px;
@@ -518,6 +565,11 @@ min-width: 163px;
   .li-portfolio:nth-child(3n){
 margin-right: 0;
   }
+ .li-portfolio:hover,
+ .li-portfolio:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ }
   .list-portfolio {
     display: flex;
     flex-wrap: wrap;
