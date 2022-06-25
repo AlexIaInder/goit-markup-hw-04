@@ -105,7 +105,7 @@ margin-right: 50px;
  text-decoration: none;
  color: var(--primary-text-color);
 }
-.studio {
+.nav-active {
   color: var(--accent-color);
 }
 .portfolio {
@@ -323,13 +323,16 @@ fill: currentColor;
   margin-bottom: 30px;
 }
 .logo-social {
-  
-  fill:#FFFFFF;
+  border-radius: 50%;
+  fill:#afb1b8;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
 }
 .logo-social:hover,
 .logo-social:focus {
-      fill: var(--accent-color);
-      cursor: pointer;
+      fill: var(--primary-bg-color);
+      background-color: var(--accent-color);
       
     }
     /* var(--primary-bg-color)
@@ -361,10 +364,12 @@ fill: currentColor;
   height: 46px;
   fill:#afb1b8 ;
 }
-.clines-container .clines:hover{
-fill: var(--accent-color);
-cursor: pointer;
-
+.clines-container:hover, .clines-container:focus {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+.clines-container:hover svg, .clines-container:focus svg {
+  fill: var(--accent-color);
 }
 /* fill="#afb1b8" style="fill:var(--color3, #afb1b8)" */
 
@@ -466,12 +471,15 @@ margin-top: 20px;
 }
 
 .icon-footer svg {
+  border-radius: 50px;
   height: 44px;
-  fill: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  fill: var(--primary-bg-color);
+  background-color:rgba(255, 255, 255, 0.1);
 }
 .icon-footer svg:hover,
 .icon-footer svg:focus {
-  fill: var(--accent-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 /* fill="#fff" style="fill:var(--color4, #fff)" */
