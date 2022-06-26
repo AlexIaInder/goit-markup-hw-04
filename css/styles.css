@@ -34,13 +34,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* h1,
+h1,
 h2,
 h3,
 p,
 ul {
 margin-top: 0;
-margin-bottom: 0; } */
+margin-bottom: 0; }
+
 header {
   border: 1px solid var(--border-color-head);
 }
@@ -254,9 +255,11 @@ fill: currentColor;
     font-size: 14px;
     line-height: 1.7;
     margin-top: 0;
-    padding-bottom: 50px;
 }
 /* Doing */
+.section-doing {
+  padding-bottom: 94px;
+}
 .doing-ul {
   display: flex;
 }
@@ -315,11 +318,11 @@ fill: currentColor;
   margin-bottom: 10px;
 }
 .social-team {
+  list-style: none;
   width: 206px;
   height: 44px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .logo-social {
@@ -328,6 +331,7 @@ fill: currentColor;
   width: 44px;
   height: 44px;
   cursor: pointer;
+  margin-top: 16px;
 }
 .logo-social:hover,
 .logo-social:focus {
@@ -450,7 +454,7 @@ margin-top: 20px;
   margin-right: auto;
   margin-bottom: 30px;
 }
-.injoit {
+.injoin {
   display: flex;
   font-weight: 700;
   font-size: 14px;
@@ -461,10 +465,12 @@ margin-top: 20px;
 }
 .footer-container {
   display: flex;
-  width: 507px;
-  align-items: center;
+  align-items: baseline;
 }
 .icon-footer {
+  margin-left: -40px;
+  margin-top: 20px;
+  list-style: none;
   display: flex;
   gap: 10px;
   
@@ -532,9 +538,7 @@ min-width: 128px;
 .button-app {
 min-width: 145px;
 }
-.button-dis {
-min-width: 163px;
-}
+
 .button-marketing {
   min-width: 130px;
 }
