@@ -319,11 +319,10 @@ fill: currentColor;
 }
 .social-team {
   list-style: none;
-  width: 206px;
-  height: 44px;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  padding: 0;
+ 
 }
 .logo-social {
   border-radius: 50%;
@@ -333,12 +332,21 @@ fill: currentColor;
   cursor: pointer;
   margin-top: 16px;
 }
+.social-team li {
+  margin-right: 10px;
+}
 .logo-social:hover,
-.logo-social:focus {
-      fill: var(--primary-bg-color);
-      background-color: var(--accent-color);
-      
-    }
+.social-team a:focus .logo-social {
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
     /* var(--primary-bg-color)
     fill="#afb1b8" style="fill:var(--color3, #afb1b8)" */
 /* Постоянные клиенты */
@@ -368,11 +376,20 @@ fill: currentColor;
   height: 46px;
   fill:#afb1b8 ;
 }
-.clines-container:hover, .clines-container:focus {
+.clines-container:hover, .clines-container a:focus {
   border: 1px solid var(--accent-color);
   cursor: pointer;
 }
-.clines-container:hover svg, .clines-container:focus svg {
+
+.clines-container a {
+      width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.clines-container:hover svg, .clines-container a:focus svg {
   fill: var(--accent-color);
 }
 /* fill="#afb1b8" style="fill:var(--color3, #afb1b8)" */
@@ -484,7 +501,7 @@ margin-top: 20px;
   background-color:rgba(255, 255, 255, 0.1);
 }
 .icon-footer svg:hover,
-.icon-footer svg:focus {
+.icon-footer a:focus svg {
   background-color: var(--accent-color);
   cursor: pointer;
 }
